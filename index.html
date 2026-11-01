@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tunde Olawale | Automotive Technician in Osogbo</title>
+<meta name="description" content="Tunde Olawale is the head automotive technician at The Wagon Car Garage in Osogbo, Osun State. Vehicle diagnosis, electrical repair, engine rebuilds and routine maintenance.">
+<meta name="theme-color" content="#0C4F57">
+<meta property="og:title" content="Tunde Olawale | Automotive Technician in Osogbo">
+<meta property="og:description" content="Vehicle diagnosis, electrical repair, engine rebuilds and routine maintenance. Over a decade of hands-on experience.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #EEF2F3;
+    --surface: #FFFFFF;
+    --ink: #12232A;
+    --muted: #46595F;
+    --line: #C5D2D6;
+    --teal: #137A85;
+    --teal-deep: #0C4F57;
+    --link: #0F6670;
+    --on-teal: #FFFFFF;
+    --signal: #F4B400;
+    --signal-ink: #3A2A00;
+    --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0E1A1F;
+      --surface: #15262D;
+      --ink: #E7EFF1;
+      --muted: #A3B8BF;
+      --line: #2C444D;
+      --teal: #2FA6B3;
+      --teal-deep: #0C4F57;
+      --link: #6CCBD6;
+      --on-teal: #06262B;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--signal);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.02; margin: 0; letter-spacing: 0.005em; }
+  p { margin: 0 0 1em; max-width: 62ch; }
+  ul { margin: 0; padding: 0; list-style: none; }
+
+  .wrap { width: min(1080px, 100% - 2.5rem); margin-inline: auto; }
+
+  /* Header */
+  .site-header { border-bottom: 1px solid var(--line); }
+  .site-header .wrap {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+    gap: .5rem 1.5rem; padding-block: 1rem;
+  }
+  .brand { font-family: var(--display); font-weight: 700; font-size: 1.5rem; color: var(--ink); text-decoration: none; letter-spacing: .01em; }
+  .site-nav { display: flex; flex-wrap: wrap; gap: .25rem 1.4rem; }
+  .site-nav a { color: var(--ink); text-decoration: none; font-weight: 500; font-size: .98rem; padding: .25rem 0; border-bottom: 2px solid transparent; }
+  .site-nav a:hover { border-bottom-color: var(--teal); }
+
+  /* Hero */
+  .hero { padding-block: clamp(2.5rem, 7vw, 5.5rem); }
+  .hero .wrap { display: grid; gap: 2.5rem; grid-template-columns: 1fr; align-items: center; }
+  @media (min-width: 820px) { .hero .wrap { grid-template-columns: 1.35fr 1fr; gap: 4rem; } }
+  .hero h1 { font-size: clamp(3.6rem, 11vw, 7.2rem); color: var(--ink); }
+  .hero .role { font-family: var(--display); font-weight: 600; font-size: clamp(1.4rem, 3.4vw, 2rem); color: var(--teal); margin: .9rem 0 1.2rem; line-height: 1.15; }
+  @media (prefers-color-scheme: light) { .hero .role { color: var(--teal-deep); } }
+  .hero .lead { font-size: 1.15rem; color: var(--muted); }
+  .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.6rem; }
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 600; font-size: 1rem;
+    padding: .8rem 1.3rem; border: 2px solid var(--teal-deep); border-radius: 2px;
+    color: var(--teal-deep); background: transparent; min-height: 44px;
+  }
+  .btn:hover { background: var(--teal-deep); color: #fff; }
+  .btn.primary { background: var(--teal-deep); color: #fff; }
+  .btn.primary:hover { background: var(--ink); border-color: var(--ink); }
+  @media (prefers-color-scheme: dark) {
+    .btn { border-color: var(--teal); color: var(--link); }
+    .btn:hover { background: var(--teal); color: var(--on-teal); }
+    .btn.primary { background: var(--teal); color: var(--on-teal); border-color: var(--teal); }
+    .btn.primary:hover { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+  }
+
+  .portrait { position: relative; justify-self: center; width: min(320px, 78%); }
+  .portrait::before {
+    content: ""; position: absolute; inset: 1.1rem -1.1rem -1.1rem 1.1rem;
+    background: var(--teal-deep);
+  }
+  .portrait .frame {
+    position: relative; aspect-ratio: 4 / 5; background: var(--surface);
+    border: 1px solid var(--line); overflow: hidden;
+    display: grid; place-items: center;
+  }
+  .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .portrait .initials { font-family: var(--display); font-weight: 700; font-size: 6rem; color: var(--teal); }
+
+  /* Sections */
+  section { padding-block: clamp(2.5rem, 6vw, 4.5rem); border-top: 1px solid var(--line); }
+  .section-head { display: grid; gap: .6rem; margin-bottom: 2rem; }
+  .section-head h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+  .section-head p { color: var(--muted); margin: 0; }
+
+  /* About */
+  .about-grid { display: grid; gap: 2rem; }
+  @media (min-width: 820px) { .about-grid { grid-template-columns: 1fr 1fr; gap: 4rem; } }
+  .about-grid h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+
+  /* Services: ruled list, not cards */
+  .services { display: grid; gap: 0; }
+  @media (min-width: 760px) { .services { grid-template-columns: 1fr 1fr; column-gap: 4rem; } }
+  .services li { padding: 1.3rem 0; border-top: 2px solid var(--ink); }
+  .services h3 { font-size: 1.7rem; margin-bottom: .45rem; }
+  .services p { margin: 0; color: var(--muted); }
+
+  /* Service history: the log */
+  .log { position: relative; }
+  .entry { display: grid; gap: .6rem 2rem; padding: 1.6rem 0; border-top: 1px solid var(--line); }
+  .entry:first-child { border-top: 2px solid var(--ink); }
+  @media (min-width: 820px) { .entry { grid-template-columns: 190px 1fr; } }
+  .entry .when { font-weight: 600; color: var(--ink); font-size: 1rem; }
+  .entry .when span { display: block; font-weight: 400; color: var(--muted); font-size: .95rem; }
+  .entry h3 { font-size: 1.85rem; }
+  .entry .where { color: var(--muted); margin: .25rem 0 .8rem; }
+  .entry ul { display: grid; gap: .45rem; max-width: 66ch; }
+  .entry li { position: relative; padding-left: 1.2rem; }
+  .entry li::before { content: ""; position: absolute; left: 0; top: .7em; width: .55rem; height: 2px; background: var(--teal); }
+  .now {
+    display: inline-block; background: var(--signal); color: var(--signal-ink);
+    font-weight: 600; font-size: .85rem; padding: .1rem .55rem; border-radius: 2px; margin-bottom: .5rem;
+  }
+
+  /* Skills and training */
+  .two-col { display: grid; gap: 2.5rem; }
+  @media (min-width: 820px) { .two-col { grid-template-columns: 1fr 1fr; gap: 4rem; } }
+  .two-col h3 { font-size: 1.9rem; margin-bottom: 1rem; padding-bottom: .6rem; border-bottom: 2px solid var(--ink); }
+  .rows li { padding: .7rem 0; border-bottom: 1px solid var(--line); }
+  .rows strong { display: block; font-weight: 600; }
+  .rows span { color: var(--muted); font-size: .97rem; }
+
+  /* Contact */
+  .contact { background: var(--teal-deep); color: #fff; border-top: none; }
+  .contact a { color: #fff; }
+  .contact h2 { font-size: clamp(2.4rem, 6vw, 4rem); margin-bottom: .8rem; }
+  .contact p { color: #D6EEF1; }
+  .contact .channels { display: grid; gap: 0; margin-top: 2rem; max-width: 640px; }
+  .contact .channels a, .contact .channels div {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: .3rem 1.5rem;
+    padding: 1rem 0; border-top: 1px solid rgba(255,255,255,.35); text-decoration: none; font-size: 1.1rem;
+  }
+  .contact .channels a:hover { background: rgba(255,255,255,.08); }
+  .contact .channels .k { color: #BFE3E8; }
+  .contact .channels a:last-child, .contact .channels div:last-child { border-bottom: 1px solid rgba(255,255,255,.35); }
+  .contact a:focus-visible { outline-color: var(--signal); }
+
+  footer { padding-block: 1.6rem; color: var(--muted); font-size: .92rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">Tunde Olawale</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#training">Training</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Tunde Olawale</h1>
+        <p class="role">Head automotive technician, Osogbo</p>
+        <p class="lead">I find what is wrong with your vehicle, explain it in plain language, and fix it properly. Over a decade of hands-on work in diagnosis, electrical repair, engine rebuilds and routine maintenance.</p>
+        <div class="actions">
+          <a class="btn primary" href="tel:+2348022414322">Call 0802 241 4322</a>
+          <a class="btn" href="https://wa.me/2348022414322?text=Hello%20Tunde%2C%20I%20would%20like%20to%20book%20a%20vehicle%20inspection." target="_blank" rel="noopener">Message on WhatsApp</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <div class="frame">
+          <span class="initials" aria-hidden="true">TO</span>
+          <img src="photo.jpg" alt="Tunde Olawale, automotive technician" onerror="this.remove()">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <h2>About</h2>
+      <div>
+        <p>I am an automotive technician who leads the workshop at The Wagon Car Garage in Osogbo. My aim is to give customers a professional service by applying and growing my knowledge in a challenging, motivating workplace.</p>
+        <p>I am trained in mechanical engineering and in automotive mechatronics. I have also worked as a course instructor and school teacher, so I am used to breaking complex mechanical problems into simple parts for people who have never looked under a bonnet.</p>
+        <p>I speak English and Yoruba fluently.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What I do</h2>
+        <p>Work I handle every week on cars, SUVs and light trucks.</p>
+      </div>
+      <ul class="services">
+        <li>
+          <h3>Fault diagnosis</h3>
+          <p>Inspections, test drives and diagnostic software to find the real cause of performance and safety problems before any part is replaced.</p>
+        </li>
+        <li>
+          <h3>Electrical systems</h3>
+          <p>Diagnosis and repair of vehicle electrical faults using computer programs and the manufacturer's electrical diagrams.</p>
+        </li>
+        <li>
+          <h3>Engine rebuilds and replacement</h3>
+          <p>Engine rebuilding and engine replacement, including removing and replacing faulty components such as transmissions and brakes.</p>
+        </li>
+        <li>
+          <h3>Routine maintenance</h3>
+          <p>Oil changes, brake inspections, suspension parts replacement and tyre rotation, so your vehicle keeps running safely.</p>
+        </li>
+        <li>
+          <h3>Clear estimates</h3>
+          <p>I explain the recommended repairs and give you an estimate before work begins.</p>
+        </li>
+        <li>
+          <h3>Repair records</h3>
+          <p>Every repair, maintenance job and part used is documented accurately for your records.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Service history</h2>
+        <p>Where I have worked, newest first.</p>
+      </div>
+      <div class="log">
+
+        <article class="entry">
+          <div class="when">July 2021 to present<span>Osogbo</span></div>
+          <div>
+            <span class="now">Current role</span>
+            <h3>Head, Automotive Technician</h3>
+            <p class="where">The Wagon Car Garage, Limited</p>
+            <ul>
+              <li>Lead a team of technicians and manage day-to-day workshop repairs.</li>
+              <li>Inspect and test drive vehicles to identify performance and safety issues.</li>
+              <li>Diagnose and repair vehicle electrical systems using computer programs.</li>
+              <li>Repair a wide range of vehicles, from sedans to light trucks.</li>
+              <li>Explain repair recommendations to customers and provide estimates.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">March 2017 to June 2021<span>Osogbo</span></div>
+          <div>
+            <h3>Team Lead, Automotive Technician</h3>
+            <p class="where">Automedics Limited, Osogbo</p>
+            <ul>
+              <li>Used diagnostic tools and equipment to find and repair vehicle performance issues.</li>
+              <li>Specialised in rebuilding engines and engine replacement.</li>
+              <li>Completed repairs on cars, trucks and SUVs, and carried out scheduled maintenance.</li>
+              <li>Built lasting relationships with customers.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">December 2015 to March 2017<span>Lagos</span></div>
+          <div>
+            <h3>Automotive Diagnostician and Technician</h3>
+            <p class="where">Automedics Limited, Lagos</p>
+            <ul>
+              <li>Diagnosed and repaired electrical and mechanical faults using diagnostic equipment and technical manuals.</li>
+              <li>Repaired and replaced faulty components, including engines, transmissions, brakes and electrical systems.</li>
+              <li>Worked with technicians and service advisors to finish repairs on time.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">August 2014 to December 2015<span>Lagos</span></div>
+          <div>
+            <h3>Course Instructor</h3>
+            <p class="where">Automedics Limited, Lagos</p>
+            <ul>
+              <li>Developed and delivered automotive course materials, covering theory and hands-on practical sessions.</li>
+              <li>Mentored students as they built practical repair and maintenance skills.</li>
+              <li>Attended workshops and trainings to improve teaching skills.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">November 2011 to June 2014<span>Ogun State</span></div>
+          <div>
+            <h3>Subjects Teacher</h3>
+            <p class="where">Isaac Newton International School, Ogun State</p>
+            <ul>
+              <li>Taught Mathematics, Physics and Technical Drawing.</li>
+              <li>Assessed student progress and supported students through academic challenges.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="when">September 2009 to March 2010<span>Lagos</span></div>
+          <div>
+            <h3>Intern</h3>
+            <p class="where">Lagos State Ministry of Works</p>
+            <ul>
+              <li>Helped troubleshoot equipment issues and prepare technical documentation.</li>
+              <li>Carried out routine maintenance, including oil changes, brake inspections, suspension work and tyre rotation.</li>
+              <li>Learned and applied engineering principles under supervision.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="training">
+    <div class="wrap two-col">
+      <div>
+        <h3>Education and certificates</h3>
+        <ul class="rows">
+          <li><strong>B.Sc Mechanical Engineering</strong><span>Lagos State University, 2006 to 2011</span></li>
+          <li><strong>Automotive Mechatronics Training Programme</strong><span>February 2015 to March 2017</span></li>
+          <li><strong>AC Service for Automotive Application</strong><span>May 2016</span></li>
+          <li><strong>Senior Secondary School Certificate</strong><span>Oke-ira Grammar School, Lagos State, 2002</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Skills</h3>
+        <ul class="rows">
+          <li><strong>Diagnosis and repair</strong><span>Including diagnostic software</span></li>
+          <li><strong>Reading service manuals and electrical diagrams</strong><span>Proven ability to read and interpret both</span></li>
+          <li><strong>Team building and time management</strong><span>Leads and manages workshop teams</span></li>
+          <li><strong>Customer service and communication</strong><span>Clear explanations and honest estimates</span></li>
+          <li><strong>Languages</strong><span>English (advanced), Yoruba (advanced)</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Book an inspection</h2>
+      <p>Call, message or email to talk about your vehicle. I am based in Osogbo, Osun State.</p>
+      <div class="channels">
+        <a href="tel:+2348022414322"><span class="k">Phone</span><span>0802 241 4322</span></a>
+        <a href="https://wa.me/2348022414322?text=Hello%20Tunde%2C%20I%20would%20like%20to%20book%20a%20vehicle%20inspection." target="_blank" rel="noopener"><span class="k">WhatsApp</span><span>0802 241 4322</span></a>
+        <a href="mailto:olawaletunde01@gmail.com"><span class="k">Email</span><span>olawaletunde01@gmail.com</span></a>
+        <div><span class="k">Location</span><span>Osogbo, Osun State</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Tunde Olawale. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
