@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tunde Olawale | Automotive Technician in Osogbo</title>
-<meta name="description" content="Tunde Olawale is the head automotive technician at The Wagon Car Garage in Osogbo, Osun State. Vehicle diagnosis, electrical repair, engine rebuilds and routine maintenance.">
+<title>Engr. Tunde Olawale | Mechanical Engineer and Automotive Technician in Osogbo</title>
+<meta name="description" content="Engr. Tunde Olawale is a COREN-registered mechanical engineer and head automotive technician at The Wagon Car Garage in Osogbo, Osun State. Vehicle diagnosis, electrical repair, engine rebuilds and routine maintenance.">
 <meta name="theme-color" content="#0C4F57">
-<meta property="og:title" content="Tunde Olawale | Automotive Technician in Osogbo">
-<meta property="og:description" content="Vehicle diagnosis, electrical repair, engine rebuilds and routine maintenance. Over a decade of hands-on experience.">
+<meta property="og:title" content="Engr. Tunde Olawale | Mechanical Engineer and Automotive Technician in Osogbo">
+<meta property="og:description" content="Registered mechanical engineer with over a decade of hands-on experience in vehicle diagnosis, electrical repair, engine rebuilds and routine maintenance.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -126,6 +126,15 @@
   @media (min-width: 820px) { .about-grid { grid-template-columns: 1fr 1fr; gap: 4rem; } }
   .about-grid h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 
+  /* Professional bodies */
+  .bodies { display: grid; gap: 0; }
+  @media (min-width: 760px) { .bodies { grid-template-columns: repeat(3, 1fr); column-gap: 2.5rem; } }
+  .bodies li { padding: 1.3rem 0; border-top: 2px solid var(--ink); }
+  .bodies h3 { font-size: 2.4rem; color: var(--teal); }
+  @media (prefers-color-scheme: light) { .bodies h3 { color: var(--teal-deep); } }
+  .bodies .status { font-weight: 600; margin: .3rem 0 .2rem; }
+  .bodies p:last-child { margin: 0; color: var(--muted); }
+
   /* Services: ruled list, not cards */
   .services { display: grid; gap: 0; }
   @media (min-width: 760px) { .services { grid-template-columns: 1fr 1fr; column-gap: 4rem; } }
@@ -154,6 +163,7 @@
   .two-col { display: grid; gap: 2.5rem; }
   @media (min-width: 820px) { .two-col { grid-template-columns: 1fr 1fr; gap: 4rem; } }
   .two-col h3 { font-size: 1.9rem; margin-bottom: 1rem; padding-bottom: .6rem; border-bottom: 2px solid var(--ink); }
+  .two-col h3.spaced { margin-top: 2.5rem; }
   .rows li { padding: .7rem 0; border-bottom: 1px solid var(--line); }
   .rows strong { display: block; font-weight: 600; }
   .rows span { color: var(--muted); font-size: .97rem; }
@@ -180,11 +190,12 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="#top">Tunde Olawale</a>
+    <a class="brand" href="#top">Engr. Tunde Olawale</a>
     <nav class="site-nav" aria-label="Main">
+      <a href="#bodies">Professional bodies</a>
       <a href="#services">Services</a>
       <a href="#experience">Experience</a>
-      <a href="#training">Training</a>
+      <a href="#training">Credentials</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -195,18 +206,18 @@
   <div class="hero">
     <div class="wrap">
       <div>
-        <h1>Tunde Olawale</h1>
-        <p class="role">Head automotive technician, Osogbo</p>
-        <p class="lead">I find what is wrong with your vehicle, explain it in plain language, and fix it properly. Over a decade of hands-on work in diagnosis, electrical repair, engine rebuilds and routine maintenance.</p>
+        <h1>Engr. Tunde Olawale</h1>
+        <p class="role">Registered mechanical engineer and head automotive technician, Osogbo</p>
+        <p class="lead">Registered mechanical engineer (COREN) with over a decade of hands-on work in vehicle diagnosis, electrical repair, engine rebuilds and routine maintenance. I find what is wrong with your vehicle, explain it in plain language, and fix it properly.</p>
         <div class="actions">
           <a class="btn primary" href="tel:+2348022414322">Call 0802 241 4322</a>
-          <a class="btn" href="https://wa.me/2348022414322?text=Hello%20Tunde%2C%20I%20would%20like%20to%20book%20a%20vehicle%20inspection." target="_blank" rel="noopener">Message on WhatsApp</a>
+          <a class="btn" href="https://wa.me/2348022414322?text=Hello%20Engr.%20Tunde%2C%20I%20would%20like%20to%20book%20a%20vehicle%20inspection." target="_blank" rel="noopener">Message on WhatsApp</a>
         </div>
       </div>
       <div class="portrait">
         <div class="frame">
           <span class="initials" aria-hidden="true">TO</span>
-          <img src="photo.jpg" alt="Tunde Olawale, automotive technician" onerror="this.remove()">
+          <img src="photo.jpg" alt="Engr. Tunde Olawale, automotive technician" onerror="this.remove()">
         </div>
       </div>
     </div>
@@ -216,10 +227,36 @@
     <div class="wrap about-grid">
       <h2>About</h2>
       <div>
-        <p>I am an automotive technician who leads the workshop at The Wagon Car Garage in Osogbo. My aim is to give customers a professional service by applying and growing my knowledge in a challenging, motivating workplace.</p>
-        <p>I am trained in mechanical engineering and in automotive mechatronics. I have also worked as a course instructor and school teacher, so I am used to breaking complex mechanical problems into simple parts for people who have never looked under a bonnet.</p>
+        <p>I am a registered mechanical engineer with a B.Sc in Mechanical Engineering from Lagos State University, registered with the Council for the Regulation of Engineering in Nigeria (COREN). I lead the workshop at The Wagon Car Garage in Osogbo, where I combine engineering knowledge with hands-on diagnosis and repair.</p>
+        <p>I have led technician teams, rebuilt engines, and worked as a course instructor and school teacher, so I am used to turning complex mechanical problems into simple terms for people who have never looked under a bonnet.</p>
         <p>I speak English and Yoruba fluently.</p>
       </div>
+    </div>
+  </section>
+
+  <section id="bodies">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Professional bodies</h2>
+        <p>Registered and recognised as an engineer in Nigeria.</p>
+      </div>
+      <ul class="bodies">
+        <li>
+          <h3>COREN</h3>
+          <p class="status">Registered Engineer</p>
+          <p>Council for the Regulation of Engineering in Nigeria</p>
+        </li>
+        <li>
+          <h3>NSE</h3>
+          <p class="status">Member</p>
+          <p>Nigerian Society of Engineers</p>
+        </li>
+        <li>
+          <h3>NiMechE</h3>
+          <p class="status">Member</p>
+          <p>Nigerian Institution of Mechanical Engineering</p>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -273,11 +310,12 @@
             <h3>Head, Automotive Technician</h3>
             <p class="where">The Wagon Car Garage, Limited</p>
             <ul>
-              <li>Lead a team of technicians and manage day-to-day workshop repairs.</li>
-              <li>Inspect and test drive vehicles to identify performance and safety issues.</li>
-              <li>Diagnose and repair vehicle electrical systems using computer programs.</li>
-              <li>Repair a wide range of vehicles, from sedans to light trucks.</li>
-              <li>Explain repair recommendations to customers and provide estimates.</li>
+              <li>Manage and supervise a team of workshop employees.</li>
+              <li>Conduct inspections and test drives to resolve vehicle performance and safety concerns.</li>
+              <li>Perform advanced electrical system diagnosis and repair using specialised computer programs.</li>
+              <li>Identify and remove defective parts across vehicles from sedans to light trucks.</li>
+              <li>Document all repairs, maintenance and parts used for accurate records.</li>
+              <li>Explain repair recommendations to customers and give accurate service estimates.</li>
             </ul>
           </div>
         </article>
@@ -354,21 +392,25 @@
   <section id="training">
     <div class="wrap two-col">
       <div>
-        <h3>Education and certificates</h3>
+        <h3>Education</h3>
         <ul class="rows">
           <li><strong>B.Sc Mechanical Engineering</strong><span>Lagos State University, 2006 to 2011</span></li>
+          <li><strong>Senior Secondary School Certificate</strong><span>Oke-ira Grammar School, Lagos State, 2002</span></li>
+        </ul>
+        <h3 class="spaced">Training and certificates</h3>
+        <ul class="rows">
           <li><strong>Automotive Mechatronics Training Programme</strong><span>February 2015 to March 2017</span></li>
           <li><strong>AC Service for Automotive Application</strong><span>May 2016</span></li>
-          <li><strong>Senior Secondary School Certificate</strong><span>Oke-ira Grammar School, Lagos State, 2002</span></li>
         </ul>
       </div>
       <div>
         <h3>Skills</h3>
         <ul class="rows">
-          <li><strong>Diagnosis and repair</strong><span>Including diagnostic software</span></li>
-          <li><strong>Reading service manuals and electrical diagrams</strong><span>Proven ability to read and interpret both</span></li>
-          <li><strong>Team building and time management</strong><span>Leads and manages workshop teams</span></li>
-          <li><strong>Customer service and communication</strong><span>Clear explanations and honest estimates</span></li>
+          <li><strong>Vehicle diagnostics and repair</strong><span>Electrical systems, engine rebuilding and replacement, computerised diagnostic software</span></li>
+          <li><strong>Reading service manuals and electrical diagrams</strong><span>Proven ability to read and interpret complex technical documents</span></li>
+          <li><strong>Team leadership and team building</strong><span>Leads and supervises workshop teams</span></li>
+          <li><strong>Time management and multitasking</strong><span>Keeps repairs on schedule</span></li>
+          <li><strong>Customer service and communication</strong><span>Clear explanations and accurate estimates</span></li>
           <li><strong>Languages</strong><span>English (advanced), Yoruba (advanced)</span></li>
         </ul>
       </div>
@@ -381,7 +423,7 @@
       <p>Call, message or email to talk about your vehicle. I am based in Osogbo, Osun State.</p>
       <div class="channels">
         <a href="tel:+2348022414322"><span class="k">Phone</span><span>0802 241 4322</span></a>
-        <a href="https://wa.me/2348022414322?text=Hello%20Tunde%2C%20I%20would%20like%20to%20book%20a%20vehicle%20inspection." target="_blank" rel="noopener"><span class="k">WhatsApp</span><span>0802 241 4322</span></a>
+        <a href="https://wa.me/2348022414322?text=Hello%20Engr.%20Tunde%2C%20I%20would%20like%20to%20book%20a%20vehicle%20inspection." target="_blank" rel="noopener"><span class="k">WhatsApp</span><span>0802 241 4322</span></a>
         <a href="mailto:olawaletunde01@gmail.com"><span class="k">Email</span><span>olawaletunde01@gmail.com</span></a>
         <div><span class="k">Location</span><span>Osogbo, Osun State</span></div>
       </div>
@@ -391,7 +433,7 @@
 </main>
 
 <footer>
-  <div class="wrap">&copy; 2026 Tunde Olawale. All rights reserved.</div>
+  <div class="wrap">&copy; 2026 Engr. Tunde Olawale. All rights reserved.</div>
 </footer>
 
 </body>
